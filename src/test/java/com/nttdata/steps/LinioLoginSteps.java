@@ -51,21 +51,21 @@ public class LinioLoginSteps {
         }
     }
 
-    public void mejores(){
+    public void betterProduct(){
         try {
             this.driver.findElement(LinioLoginPage.hrefMejores).click();
         } catch (Exception e) {
         }
     }
 
-    public void producto(){
+    public void any(){
         try {
             this.driver.findElement(LinioLoginPage.anyProduct).click();
         } catch (Exception e) {
         }
     }
 
-    public void carrito(){
+    public void add(){
         try {
             this.driver.findElement(LinioLoginPage.addCart).click();
         } catch (Exception e) {

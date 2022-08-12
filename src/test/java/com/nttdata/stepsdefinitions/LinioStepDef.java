@@ -89,23 +89,26 @@ public class LinioStepDef {
 
     @Given("Estoy logeado")
     public void estoyLogeado() {
+        loginSteps.typeUser("no.david.albornoz@gmail.com");
+        loginSteps.typePassword("c3p0r2d2");
+        loginSteps.login();
     }
 
     @When("Hago click en mejores calificados")
     public void hagoClickEnMejoresCalificados() {
-        loginSteps.mejores();
+        loginSteps.betterProduct();
         screenShot();
     }
 
     @And("Hago click en cualquier producto")
     public void hagoClickEnCualquierProducto() {
-        loginSteps.producto();
+        loginSteps.any();
         screenShot();
     }
 
     @And("Hago click en el boton añadir al carrito")
     public void hagoClickEnElBotonAñadirAlCarrito() {
-        loginSteps.carrito();
+        loginSteps.add();
         screenShot();
     }
 
