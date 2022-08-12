@@ -57,7 +57,7 @@ public class LinioStepDef {
         screenShot();
     }
 
-    @When("Ingrese mis credenciales {string} y pass {string}")
+    @When("Ingreso mis credenciales {string} y pass {string}")
     public void ingreseMisCredencialesYPass(String user, String password) {
         //loginSteps = new GuruLoginSteps(driver);
         loginSteps.typeUser(user);
