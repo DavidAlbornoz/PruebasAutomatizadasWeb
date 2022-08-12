@@ -89,6 +89,7 @@ public class LinioStepDef {
 
     @Given("Estoy logeado")
     public void estoyLogeado() {
+        driver.get("https://www.linio.com.pe/account/login");
         loginSteps.typeUser("no.david.albornoz@gmail.com");
         loginSteps.typePassword("c3p0r2d2");
         loginSteps.login();
